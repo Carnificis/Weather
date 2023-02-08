@@ -1,2 +1,0 @@
-var requestUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={534b29d66afe9258da891c84ad465ce';
-var apik = 534b29d66afe9258da891c84ad465ce5
