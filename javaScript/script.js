@@ -44,10 +44,10 @@ function currentForecast(city){
         var htmlTEXT = `<div class="cards">
         <div class="d-flex justify-content-between w-70">
           <div>
-            <h2 ><strong>${apiData.main.temp}°F</strong></h2>
-            <p class="text-muted mb-0">${city}</p>
+          <h2 class="text-muted mb-0">${city}</h2>
           </div>
           <div>
+          <h4 ><strong>${apiData.main.temp}°F</strong></h4>
             <img src="https://openweathermap.org/img/wn/${apiData.weather[0].icon}@2x.png"
               width="150px">
               <p >Description:${apiData.weather[0].description}</p>
@@ -77,7 +77,7 @@ function fiveDayForecast(city){
         <div class=" mb-4 pb-2">
           <div>
             <h5 ><strong>${apiData[i].main.temp}°F</strong></h5>
-            <p class="text-muted mb-0">${dayjs(apiData[i].dt_text).format('DD/MM/YYYY')}</p>
+            <p class="text-muted mb-0">${dayjs(apiData[i].dt_txt).format('DD/MM/YYYY')}</p>
         
             <img src="https://openweathermap.org/img/wn/${apiData[i].weather[0].icon}@2x.png"
               width="150px">
@@ -92,3 +92,7 @@ function fiveDayForecast(city){
     })
 
 }
+
+
+currentForecast("Chicago")
+fiveDayForecast("Chicago")
