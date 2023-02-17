@@ -15,151 +15,23 @@
   <header class="text-center bg-primary">
     <h1>Weather Dashboard</h1>
   </header>
-  <section class="container d-flex justify-content-evenly" style="background-color: #C1CFEA;">
+  <section class="container d-flex justify-content-around" style="background-color: #C1CFEA;">
     <form class="topnav m-5 p-5">
-      <input type="text" placeholder="Search.."  id="search-txt">
-      <button  id="check-btn" class="btn btn-primary" type="button">Check
+      <input type="text" placeholder="Search.." id="search-txt">
+      <button id="check-btn" class="btn btn-primary" type="button">Check
       </button>
     </form>
     <div class="container py-5 h-100" id="previous-search">
   </section>
-  <section class="main-content" >
+  <section class="main-content">
     <div class="container m-5 p-5 border border-primary" id="currentForecast"></div>
     <div class="container m-5 p-5 d-flex justify-content-between flex-wrap" id="fiveDayForecast"></div>
-      <!-- <div class="row d-flex justify-content-center align-items-center h-100" style="color: #282828;">
-        <div class="col-md-9 col-lg-7 col-xl-5">
 
-           <div class="card mb-4 gradient-custom" style="border-radius: 25px;">
-            <div class="card-body p-4">
+    </div>
+    </div>
 
-               <div id="demo1" class="container" >
-               Indicators -->
-                <!-- <ul class="mb-0">
-                  <li data-target="#demo1" data-slide-to="0" class="active"></li>
-                  <li data-target="#demo1" data-slide-to="1"></li>
-                  <li data-target="#demo1" data-slide-to="2"></li>
-                </ul> --> -->
-                <!-- Carousel inner -->
-                <!-- <div id = "currentForecast" class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="d-flex justify-content-between mb-4 pb-2">
-                      <div>
-                        <h2 class="display-2"><strong>°F</strong></h2>
-                        <p class="text-muted mb-0"></p>
-                      </div>
-                      <div>
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu3.webp"
-                          width="150px">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div> -->
-          <!-- </div> -->
-
-          <!-- <div class="card mb-4" style="border-radius: 25px;">
-            <div class="card-body p-4">
-
-              <div id="demo2" class="carousel slide" data-ride="carousel"> -->
-                <!-- Indicators
-                 <ul class="carousel-indicators mb-0">
-                  <li data-target="#demo2" data-slide-to="0"></li>
-                  <li data-target="#demo2" data-slide-to="1" class="active"></li>
-                  <li data-target="#demo2" data-slide-to="2"></li>
-                </ul> -->
-                <!-- Carousel inner -->
-                <!-- <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div  id ="fiveDayForecast" class="d-flex justify-content-around text-center mb-4 pb-3 pt-2">
-                      <div class="flex-column">
-                        <p class="small"><strong>°F</strong></p>
-                        <i class="fas fa-sun fa-2x mb-3" style="color: #ddd;"></i>
-                        <p class="mb-0"><strong>12:00</strong></p>
-                        <p class="mb-0 text-muted" style="font-size: .40rem;">PM</
-                      </div>
-                      <div class="flex-column">
-                        <p class="small"><strong>°F</strong></p>
-                        <i class="fas fa-sun fa-2x mb-3" style="color: #ddd;"></i>
-                        <p class="mb-0"><strong>1:00</strong></p>
-                        <p class="mb-0 text-muted" style="font-size: .40rem;">PM</p>
-                      </div>
-                      <div class="flex-column">
-                        <p class="small"><strong>°F</strong></p>
-                        <i class="fas fa-cloud fa-2x mb-3" style="color: #ddd;"></i>
-                        <p class="mb-0"><strong>2:00</strong></p>
-                        <p class="mb-0 text-muted" style="font-size: .40rem;">PM</p>
-                      </div>
-                      <div class="flex-column">
-                        <p class="small"><strong>°F</strong></p>
-                        <i class="fas fa-cloud fa-2x mb-3" style="color: #ddd;"></i>
-                        <p class="mb-0"><strong>3:00</strong></p>
-                        <p class="mb-0 text-muted" style="font-size: .40rem;">PM</p>
-                      </div>
-                      <div class="flex-column">
-                        <p class="small"><strong>°F</strong></p>
-                        <i class="fas fa-cloud-showers-heavy fa-2x mb-3" style="color: #ddd;"></i>
-                        <p class="mb-0"><strong>4:00</strong></p>
-                        <p class="mb-0 text-muted" style="font-size: .40rem;">PM</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div> --> --> -->
-
-          <!-- <div class="card" style="border-radius: 25px;">
-            <div class="card-body p-4">
-
-              <div id="demo3" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <!-- <ul class="carousel-indicators mb-0">
-                  <li data-target="#demo3" data-slide-to="0"></li>
-                  <li data-target="#demo3" data-slide-to="1"></li>
-                  <li data-target="#demo3" data-slide-to="2" class="active"></li>
-                </ul> --> -->
-                <!-- Carousel inner -->
-                <!-- <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="d-flex justify-content-around text-center mb-4 pb-3 pt-2">
-                      <div class="flex-column">
-                        <p class="small"><strong>°F</strong></p>
-                        <i class="fas fa-sun fa-2x mb-3" style="color: #ddd;"></i>
-                        <p class="mb-0"><strong>Mon</strong></p>
-                      </div>
-                      <div class="flex-column">
-                        <p class="small"><strong>°F</strong></p>
-                        <i class="fas fa-sun fa-2x mb-3" style="color: #ddd;"></i>
-                        <p class="mb-0"><strong>Tue</strong></p>
-                      </div>
-                      <div class="flex-column">
-                        <p class="small"><strong>°F</strong></p>
-                        <i class="fas fa-cloud fa-2x mb-3" style="color: #ddd;"></i>
-                        <p class="mb-0"><strong>Wed</strong></p>
-                      </div>
-                      <div class="flex-column">
-                        <p class="small"><strong>°F</strong></p>
-                        <i class="fas fa-cloud fa-2x mb-3" style="color: #ddd;"></i>
-                        <p class="mb-0"><strong>Thu</strong></p>
-                      </div>
-                      <div class="flex-column">
-                        <p class="small"><strong>°F</strong></p>
-                        <i class="fas fa-cloud-showers-heavy fa-2x mb-3" style="color: #ddd;"></i>
-                        <p class="mb-0"><strong>Fri</strong></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-
-            </div>
-          </div>
-
-        </div> -->
-      </div>
+    </div>
+    </div>
 
     </div>
   </section>
@@ -172,27 +44,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
 
   <script src="./javaScript/script.js"></script>
 </body>
+
 </html>
-
-
-
-<!-- function addToHistory (search)
-searchHistory.push(search);
-localstorage.setItem('search-history', JSON.stringify(searchHistory));
-
-displaySearchHistory();
-
-
-}
-
-function displaySearchHistory(){
-searchHistoryContainer.innerHTML = '';
-for (let i = searchHistory.length-1; i < searchHistory.length; index--) var btn=document.createElement('button');
-  btn.setAttribute('type', 'button' ); btn.classList.add('history-btn', 'btn-history' ) btn.setAttribute('data-search',
-  searchHistory[index]); btn.textContent=searchHistory[index]; searchHistoryContainer.append(btn); } -->
