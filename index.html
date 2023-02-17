@@ -12,30 +12,33 @@
 </head>
 
 <body>
-  <div class="topnav">
+  <header class="text-center bg-primary">
+    <h1>Weather Dashboard</h1>
+  </header>
+  <form class="topnav m-5 p-5">
     <input type="text" placeholder="Search.."  id="search-txt">
-  </div>
-  <button  id="check-btn" type="button">Check
-  </button>
-  <section class="vh-100" style="background-color: #C1CFEA;">
+    <button  id="check-btn" class="btn btn-primary" type="button">Check
+    </button>
+  </form>
+  <section class="main-content" style="background-color: #C1CFEA;">
     <div class="container py-5 h-100">
-    <div class="container" id="currentForecast"></div>
-    <div class="container" id="fiveDayForecast"></div>
-      <div class="row d-flex justify-content-center align-items-center h-100" style="color: #282828;">
+    <div class="container m-5 p-5 border border-primary" id="currentForecast"></div>
+    <div class="container m-5 p-5 d-flex justify-content-between flex-wrap" id="fiveDayForecast"></div>
+      <!-- <div class="row d-flex justify-content-center align-items-center h-100" style="color: #282828;">
         <div class="col-md-9 col-lg-7 col-xl-5">
 
            <div class="card mb-4 gradient-custom" style="border-radius: 25px;">
             <div class="card-body p-4">
 
-               <div id="demo1" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ul class="carousel-indicators mb-0">
+               <div id="demo1" class="container" >
+               Indicators -->
+                <!-- <ul class="mb-0">
                   <li data-target="#demo1" data-slide-to="0" class="active"></li>
                   <li data-target="#demo1" data-slide-to="1"></li>
                   <li data-target="#demo1" data-slide-to="2"></li>
-                </ul> -->
+                </ul> --> -->
                 <!-- Carousel inner -->
-                <div id = "currentForecast" class="carousel-inner">
+                <!-- <div id = "currentForecast" class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="d-flex justify-content-between mb-4 pb-2">
                       <div>
@@ -51,21 +54,21 @@
                 </div>
               </div>
 
-            </div>
-          </div>
+            </div> -->
+          <!-- </div> -->
 
-          <div class="card mb-4" style="border-radius: 25px;">
+          <!-- <div class="card mb-4" style="border-radius: 25px;">
             <div class="card-body p-4">
 
-              <div id="demo2" class="carousel slide" data-ride="carousel">
+              <div id="demo2" class="carousel slide" data-ride="carousel"> -->
                 <!-- Indicators
-                <!-- <ul class="carousel-indicators mb-0">
+                 <ul class="carousel-indicators mb-0">
                   <li data-target="#demo2" data-slide-to="0"></li>
                   <li data-target="#demo2" data-slide-to="1" class="active"></li>
                   <li data-target="#demo2" data-slide-to="2"></li>
                 </ul> -->
                 <!-- Carousel inner -->
-                <div class="carousel-inner">
+                <!-- <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div  id ="fiveDayForecast" class="d-flex justify-content-around text-center mb-4 pb-3 pt-2">
                       <div class="flex-column">
@@ -104,20 +107,20 @@
               </div>
 
             </div>
-          </div> -->
+          </div> --> --> -->
 
-          <div class="card" style="border-radius: 25px;">
+          <!-- <div class="card" style="border-radius: 25px;">
             <div class="card-body p-4">
 
               <div id="demo3" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
-                <ul class="carousel-indicators mb-0">
+                <!-- <ul class="carousel-indicators mb-0">
                   <li data-target="#demo3" data-slide-to="0"></li>
                   <li data-target="#demo3" data-slide-to="1"></li>
                   <li data-target="#demo3" data-slide-to="2" class="active"></li>
-                </ul>
+                </ul> --> -->
                 <!-- Carousel inner -->
-                <div class="carousel-inner">
+                <!-- <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="d-flex justify-content-around text-center mb-4 pb-3 pt-2">
                       <div class="flex-column">
@@ -148,7 +151,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
             </div>
           </div>
@@ -167,6 +170,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"></script>
+
   <script src="./javaScript/script.js"></script>
 </body>
 </html>
