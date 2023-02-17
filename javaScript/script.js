@@ -7,9 +7,32 @@ document.getElementById("check-btn").addEventListener("click",function(event){
     console.log(cityInput)
     currentForecast(cityInput)
     fiveDayForecast(cityInput);
+    var cityForecast = JSON.parse(localStorage.getItem("cityForecast")) || []
+    cityForecast.push(cityInput)
+    localStorage.setItem("cityForecast", JSON.stringify(cityForecast))
+    DisplayButton()
 })
 
+function DisplayButton (){
+  var cityForecast = JSON.parse(localStorage.getItem("cityForecast")) || []
+  let HTMLCode = ""
+  for(let i=0;i<cityForecast.length;i++){
+    HTMLCode += `
+    <button class="btn btn-secondary search">${cityForecast[i]}</button>
+    `
+  }
+  document.getElementById("previous-search").innerHTML = HTMLCode
+  document.querySelectorAll(".search").forEach(element =>
+    element.addEventListener("click",function(){
+      var city = this.textContent
+      console.log(city);
+      currentForecast(city)
+      fiveDayForecast(city)
+    })
+    )
+}
 
+DisplayButton()
 function currentForecast(city){
     var URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}&units=imperial`
     fetch(URL)
