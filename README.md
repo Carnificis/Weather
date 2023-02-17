@@ -10,8 +10,8 @@ SO THAT I can plan a trip accordingly__
 By Jack Kelly
 
 ### Deployment
-[Live]()
+[Live](https://carnificis.github.io/Weather/)
 
 
 ### Screenshot:
-![Screenshot]()
+![Screenshot](https://github.com/Carnificis/Weather/blob/main/Screenshot%202023-02-16%20at%209.21.24%20PM.png)
